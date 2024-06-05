@@ -1,12 +1,73 @@
+.alert {
+   position: fixed;
+   top: 1em;
+   right: 1em;
+   z-index: 1050;
+}
 
-/* 
+.container {
+   height: 100vh;
+   padding: 3em;
+   margin-top: 1em;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo {
+   background-color: #BED7E8 !important;
+   width: 60%;
+   margin: 3em;
+   padding: 3em;
+}
 
-*/
+h1 {
+   font-size: 5em;
+   color: #09273B !important;
+}
+
+.custom-input {
+   border-bottom: 2px solid transparent;
+   transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.custom-input:focus {
+   border-bottom-color: #325369;
+   box-shadow: 0 4px 6px -1px #325369;
+}
+
+ul {
+   max-height: 80vh;
+   overflow-y: scroll;
+}
+
+li {
+   color: #5F7E93 !important;
+   overflow: hidden;
+   white-space: normal;
+   word-wrap: break-word;
+   word-break: break-word;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.list-group-item button {
+   display: none;
+}
+
+.list-group-item:hover button {
+   display: inline-block;
+}
+
+button {
+   background-color: #fff;
+   border: none;
+   line-height: 1;
+}
+
+button > i {
+   color: #9AAFBE;
+   padding: 0;
+}
+
+button > i:hover {
+   color: #09273B;
+}
